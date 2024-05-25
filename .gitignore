@@ -1,4 +1,4 @@
-images\
-model\
+images/
+model/
 .empty
 __pycache__
