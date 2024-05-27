@@ -1,9 +1,10 @@
 import streamlit as st
 import numpy as np
 from PIL import Image
-import cv2
 import json
 from tensorflow.keras.models import model_from_json
+import cv2
+
 
 # Función para cargar el modelo de reconocimiento facial
 @st.cache_resource
