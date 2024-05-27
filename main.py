@@ -65,6 +65,8 @@ def main():
 
     if captured_image:
         img = Image.open(captured_image)
+        if img.mode == 'RGBA':
+            img = img.convert('RGB')
         img_np = np.array(img)
 
         # Redimensionar la imagen cargada al tamaño esperado por el modelo (160x160)
